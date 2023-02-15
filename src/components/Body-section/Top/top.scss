@@ -1,0 +1,70 @@
+.topSection{
+    .headerSection{
+        justify-content: space-between;
+
+        .title{
+
+            h1{
+                font-size: var(--h1Fontsize);
+                color: var(--black);
+                font-weight: 700;
+            }
+            
+            p{
+                font-size: var(--normalFontSize);
+                color: var(--textColor);
+                font-weight: 500;
+            }
+        }
+
+        .searchBar{
+            padding: 1rem 2rem;
+            background: var(--white);
+            border-radius: 5px;
+            gap: 1rem;
+            box-shadow: 0 2px 4px var(--inputColor);
+
+            input{
+                border: none;
+                outline: none;
+                background: none;
+                .icon{
+                    background: var(--textColor);
+                    &:hover{
+                        color: (--primaryColor);
+                    }
+            }   
+
+            }
+        }
+
+        .adminDiv{
+            gap: 1rem;
+
+            .icon{
+                font-size: var(--biggestFontSize);
+                background: var(--white);
+                border-radius: 5px;
+                padding: 5px;
+                box-shadow: 0 2px 4px var(--inputColor);
+                color: var(--textColor);
+
+            }
+            .adminImage{
+                border: 3px solid var(--white);
+                border-radius: 10px;
+                width: 2.5rem;
+                overflow: hidden;
+                box-shadow: 0 2px 4px var(--inputColor);
+            }
+
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+    } 
+
+}

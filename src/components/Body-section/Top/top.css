@@ -1,0 +1,56 @@
+.topSection .headerSection {
+  justify-content: space-between;
+}
+.topSection .headerSection .title h1 {
+  font-size: var(--h1Fontsize);
+  color: var(--black);
+  font-weight: 700;
+}
+.topSection .headerSection .title p {
+  font-size: var(--normalFontSize);
+  color: var(--textColor);
+  font-weight: 500;
+}
+.topSection .headerSection .searchBar {
+  padding: 1rem 2rem;
+  background: var(--white);
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: 0 2px 4px var(--inputColor);
+}
+.topSection .headerSection .searchBar input {
+  border: none;
+  outline: none;
+  background: none;
+}
+.topSection .headerSection .searchBar input .icon {
+  background: var(--textColor);
+}
+.topSection .headerSection .searchBar input .icon:hover {
+  color: --primaryColor;
+}
+.topSection .headerSection .adminDiv {
+  gap: 1rem;
+}
+.topSection .headerSection .adminDiv .icon {
+  font-size: var(--biggestFontSize);
+  background: var(--white);
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px var(--inputColor);
+  color: var(--textColor);
+}
+.topSection .headerSection .adminDiv .adminImage {
+  border: 3px solid var(--white);
+  border-radius: 10px;
+  width: 2.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px var(--inputColor);
+}
+.topSection .headerSection .adminDiv img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}/*# sourceMappingURL=top.css.map */

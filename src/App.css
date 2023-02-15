@@ -18,13 +18,22 @@
     box-sizing: border-box;
     font-family: 'Centra', sans;
     transition: .3s ease;
+    scroll-behavior: smooth;
+
+    
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
 
 /* colores & estilos (default) */
 
 :root{
     --primaryColor: hsl(94, 59%, 35%);
-    --hovercolor: #bdf094;
+    --hoverColor: #bdf094;
     --paleGreen: hsl(96, 75%, 89%);
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
@@ -58,6 +67,7 @@ li{
 
 .icon{
   font-size: var(--h2FontSize);
+  cursor: pointer;
 }
 
 img{
@@ -99,19 +109,16 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  padding: 1rem;
 }
 
 .container{
-  position: relative;
-  width: 95vw;
-  height: 95vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--bgColor);
   overflow: hidden;
-  border-radius: 1rem;
   box-shadow: 2px 2px 8px var(--greyText);
 }; 
+

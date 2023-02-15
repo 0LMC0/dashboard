@@ -5,9 +5,10 @@ import './sidebar.css'
 import practiendaLogo from '../../assets/img/practiendalogo.webp'
 import {IoMdSpeedometer } from 'react-icons/io'
 import {MdDeliveryDining, MdOutlineExplore, MdOutlinePermContactCalendar} from 'react-icons/md'
-import {BsCreditCard2Front, BsTrophy} from 'react-icons/bs'
+import {BsCreditCard2Front, BsQuestionCircle, BsTrophy} from 'react-icons/bs'
 import {AiOutlinePieChart} from 'react-icons/ai'
 import {BiTrendingUp} from'react-icons/bi'
+import {FaStore} from'react-icons/fa'
 
 
 const SideBar = () => {
@@ -16,20 +17,19 @@ const SideBar = () => {
 
       <div className="logoDiv flex">
         <img src={practiendaLogo} alt="Practienda" />
-        <h2>Practienda</h2>
+        <h2>Tu Practienda </h2>
       </div>
 
+      
+
       <div className="menuDiv">
-        <h3 className="divTitle">
-          QUICK MENU
-        </h3>
-        <ul className="menuList grid">
+          <ul className="menuList grid mb-5">
 
           <li className="listItem">
             <a href="#" className='menuLink flex'>
               <IoMdSpeedometer className='icon'/>
               <span className="smallText">
-                DashBoard
+                Inicio
               </span>
             </a>
           </li>
@@ -38,7 +38,32 @@ const SideBar = () => {
             <a href="#" className='menuLink flex'>
               <MdDeliveryDining className='icon'/>
               <span className="smallText">
-                My orders
+                Estadisticas
+              </span>
+            </a>
+          </li>
+
+        </ul>
+
+        <h3 className="divTitle">
+           Administra tu Practienda  
+        </h3>
+        <ul className="menuList grid">
+
+          <li className="listItem">
+            <a href="#" className='menuLink flex'>
+              <IoMdSpeedometer className='icon'/>
+              <span className="smallText">
+                Ventas
+              </span>
+            </a>
+          </li>
+
+          <li className="listItem">
+            <a href="#" className='menuLink flex'>
+              <MdDeliveryDining className='icon'/>
+              <span className="smallText">
+                Productos
               </span>
             </a>
           </li>
@@ -47,7 +72,7 @@ const SideBar = () => {
             <a href="#" className='menuLink flex'>
               <MdOutlineExplore className='icon'/>
               <span className="smallText">
-                Explore
+                Clientes
               </span>
             </a>
           </li>
@@ -56,7 +81,7 @@ const SideBar = () => {
             <a href="#" className='menuLink flex'>
               <BsTrophy className='icon'/>
               <span className="smallText">
-                Productos
+               Categorias
               </span>
             </a>
           </li>
@@ -66,33 +91,15 @@ const SideBar = () => {
 
       <div className="settingDiv">
         <h3 className="divTitle">
-          CONFIGURACION
+          Dale Vida a tu pagina!
         </h3>
         <ul className="menuList grid">
 
           <li className="listItem">
             <a href="#" className='menuLink flex'>
-              <AiOutlinePieChart className='icon'/>
+              <BsCreditCard2Front className='icon'/>
               <span className="smallText">
-                Charts
-              </span>
-            </a>
-          </li>
-
-          <li className="listItem">
-            <a href="#" className='menuLink flex'>
-              <BiTrendingUp className='icon'/>
-              <span className="smallText">
-                Trends
-              </span>
-            </a>
-          </li>
-
-          <li className="listItem">
-            <a href="#" className='menuLink flex'>
-              <MdOutlinePermContactCalendar className='icon'/>
-              <span className="smallText">
-                Contact
+                Mi Practienda
               </span>
             </a>
           </li>
@@ -101,12 +108,24 @@ const SideBar = () => {
             <a href="#" className='menuLink flex'>
               <BsCreditCard2Front className='icon'/>
               <span className="smallText">
-                Payment
+                Mi Practienda
               </span>
             </a>
           </li>
 
         </ul>
+      </div>
+
+      <div className="sideBarCard">
+        <BsQuestionCircle className="icon"/>
+        <div className="cardContent">
+          <div className="circle1"></div>
+          <div className="circle2"></div>
+
+          <h3>Centro de Ayuda</h3>
+          <p>Tenes problemas? Necesitas ayuda? Contactanos.</p>
+          <button className="btn">Ir al Centro De Ayuda</button>
+        </div>
       </div>
     </div>
   ) 
